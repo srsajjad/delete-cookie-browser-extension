@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "logout",
+    "version": "1.0",
+    "description": "leave the site and get logged out",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.mail.google.com/*"
+            ],
+            "js": [
+                "server.js"
+            ]
+        }
+    ]
+}
